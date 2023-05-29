@@ -14,15 +14,18 @@ export class MarvellousChkPipe implements PipeTransform {
      {
         for(a=2;a<value;a++)
         {
+          if(value%a==0)
+          {
             b = b+1;
+          }
         }
         if(b==0)
         {
-          str="It in not Prime number";
+          str="It in Prime number";
         }
         else
         {
-          str="It is Prime number";
+          str="It is not Prime number";
         }
      }
      if(Param == "Perfect")
